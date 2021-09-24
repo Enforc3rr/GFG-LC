@@ -85,10 +85,8 @@ public class MinHeap {
         return array[size];
     }
     /*
-
-
+    we replace an old value with a new one and heapify the new distorted heap
      */
-
     public void decreaseKey(int[] heap , int newValue , int indexOfOldValue){
         heap[indexOfOldValue] = newValue;
 
