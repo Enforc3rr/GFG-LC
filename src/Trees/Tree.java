@@ -87,6 +87,7 @@ public class Tree {
                 treeQueue.add(current.right);
         }
     }
+
     public void sizeOfBinaryTree(Node root){
         if(root==null) return;
         Queue<Node> treeQueue = new LinkedList<>();
