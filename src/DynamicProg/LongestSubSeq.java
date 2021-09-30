@@ -3,8 +3,7 @@ package DynamicProg;
 import java.util.Arrays;
 
 public class LongestSubSeq {
-    static int[][] memo;
-
+    static int[][] memo; // dimension depends upon value that's changing during recursive calls
     static int lcs(String s1, String s2, int n, int m)
     {
         if(memo[n][m]!=-1)
