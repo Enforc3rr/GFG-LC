@@ -19,6 +19,7 @@ public class Graph2 {
         addEdge(graph, 5, 6);
         addEdge(graph, 5, 7);
         addEdge(graph, 6, 7);
+        dfsTraversal(graph,vertices,0);
     }
     private static void addEdge(ArrayList<ArrayList<Integer>> connection, int u, int v) {
         connection.get(u).add(v);
@@ -30,7 +31,7 @@ public class Graph2 {
     }
     private static void dfs(ArrayList<ArrayList<Integer>> graph ,int edge , boolean[] visited){
         visited[edge] = true;
-        System.out.println(edge);
+         System.out.print(edge);
         for(int adjEdge : graph.get(edge)){
             if(!visited[adjEdge]){
                 dfs(graph,adjEdge,visited);
