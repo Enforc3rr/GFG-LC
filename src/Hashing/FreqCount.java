@@ -13,6 +13,9 @@ public class FreqCount {
             map.put(key,map.getOrDefault(key,0)+1);
         });
 
+       array = Arrays.stream(array).filter(e -> e%2==0).toArray();
+        System.out.println(Arrays.toString(array));
+        
         System.out.println(map);
     }
 }
